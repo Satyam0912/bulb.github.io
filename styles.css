@@ -16,4 +16,9 @@ div{
     justify-content: center;
     align-items: center;
 }
+button{
+    border-radius:10px;
+    border-style:none;
+    background-color:greenyellow;
+}
 
