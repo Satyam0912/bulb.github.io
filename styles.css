@@ -8,7 +8,7 @@
     --yellow:rgb(226, 222, 5);
 }
 
-div{
+body{
     height: 100vh;
     width: 100%;
     background-color: var(--pink);
@@ -16,9 +16,19 @@ div{
     justify-content: center;
     align-items: center;
 }
-button{
-    border-radius:10px;
-    border-style:none;
-    background-color:greenyellow;
-}
 
+div{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    margin-top: 100px;
+    height: 30px;
+    width: 90px;
+    box-shadow: 1px 2px 3px 4px;
+    border-radius:10px;
+    background-color:cornsilk;
+}
