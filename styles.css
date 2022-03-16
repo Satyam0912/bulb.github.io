@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --pink:rgba(153, 71, 71, 0.842);
+    --yellow:rgb(226, 222, 5);
+}
+
+div{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
