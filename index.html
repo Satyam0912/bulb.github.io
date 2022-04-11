@@ -5,24 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bulb On/Off</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div>
-        <button onclick="bulboff()">turn off</button>
-        <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="bulb_image">
-        <button onclick="bulbon()">turn on</button>
+    <div class="main">
+        <div class="con1">
+            <img id="bulb1" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="bulb_image">
+            <br>
+            <button onclick="bulboff()">turn off</button>
+            <button onclick="bulbon()">turn on</button>
+        </div>
+        <hr>
+        <div class="con2">
+            <img id="bulb2" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="bulb_image">
+            <br>
+            <button onclick="onoff()">On/Off</button>
+        </div>
     </div>
     <script>
         function bulboff() {
-            var image =document.getElementById('myImage');
-            image.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+            document.getElementById('bulb1').src = "https://www.w3schools.com/js/pic_bulboff.gif";
         }
-        function bulbon(){
-            var image =document.getElementById('myImage');
-            image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+        function bulbon() {
+            document.getElementById('bulb1').src = "https://www.w3schools.com/js/pic_bulbon.gif";
+        }
+
+        var flag = false;
+        function onoff() {
+            if (flag == false) {
+                flag = true;
+                document.getElementById('bulb2').src = "https://www.w3schools.com/js/pic_bulbon.gif";
+            }
+            else {
+                flag = false;
+                document.getElementById('bulb2').src = "https://www.w3schools.com/js/pic_bulboff.gif";
+            }
         }
     </script>
 </body>
