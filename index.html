@@ -21,7 +21,7 @@
         <div class="con2">
             <img id="bulb2" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="bulb_image">
             <br>
-            <button onclick="onoff()">On/Off</button>
+            <button id="btnOnOff" onclick="onoff()">turn On</button>
         </div>
     </div>
     <script>
@@ -36,10 +36,12 @@
         function onoff() {
             if (flag == false) {
                 flag = true;
+                document.getElementById('btnOnOff').innerText = 'turn Off';
                 document.getElementById('bulb2').src = "https://www.w3schools.com/js/pic_bulbon.gif";
             }
             else {
                 flag = false;
+                document.getElementById('btnOnOff').innerText = 'turn On';
                 document.getElementById('bulb2').src = "https://www.w3schools.com/js/pic_bulboff.gif";
             }
         }
